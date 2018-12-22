@@ -17,6 +17,9 @@
 		B2E19A6921BC5318002186E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E19A6721BC5318002186E4 /* LaunchScreen.storyboard */; };
 		B2E19A7421BC5318002186E4 /* MotherGooseFlightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E19A7321BC5318002186E4 /* MotherGooseFlightTests.swift */; };
 		B2E19A7F21BC5319002186E4 /* MotherGooseFlightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E19A7E21BC5319002186E4 /* MotherGooseFlightUITests.swift */; };
+		B2E19A8D21BC561E002186E4 /* TitlePage.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2E19A8C21BC561E002186E4 /* TitlePage.sks */; };
+		B2E19A9121BC5679002186E4 /* TitlePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E19A9021BC5679002186E4 /* TitlePage.swift */; };
+		B2E19A9321CED0C6002186E4 /* Footer.sks in Resources */ = {isa = PBXBuildFile; fileRef = B2E19A9221CED0C6002186E4 /* Footer.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		B2E19A7A21BC5319002186E4 /* MotherGooseFlightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MotherGooseFlightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2E19A7E21BC5319002186E4 /* MotherGooseFlightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherGooseFlightUITests.swift; sourceTree = "<group>"; };
 		B2E19A8021BC5319002186E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E19A8C21BC561E002186E4 /* TitlePage.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TitlePage.sks; sourceTree = "<group>"; };
+		B2E19A9021BC5679002186E4 /* TitlePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitlePage.swift; sourceTree = "<group>"; };
+		B2E19A9221CED0C6002186E4 /* Footer.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Footer.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,9 @@
 				B2E19A5E21BC5315002186E4 /* GameScene.swift */,
 				B2E19A6021BC5315002186E4 /* GameViewController.swift */,
 				B2E19A6221BC5315002186E4 /* Main.storyboard */,
+				B2E19A8C21BC561E002186E4 /* TitlePage.sks */,
+				B2E19A9021BC5679002186E4 /* TitlePage.swift */,
+				B2E19A9421CED11B002186E4 /* Scenes */,
 				B2E19A6521BC5318002186E4 /* Assets.xcassets */,
 				B2E19A6721BC5318002186E4 /* LaunchScreen.storyboard */,
 				B2E19A6A21BC5318002186E4 /* Info.plist */,
@@ -132,6 +141,15 @@
 				B2E19A8021BC5319002186E4 /* Info.plist */,
 			);
 			path = MotherGooseFlightUITests;
+			sourceTree = "<group>";
+		};
+		B2E19A9421CED11B002186E4 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B2E19A9221CED0C6002186E4 /* Footer.sks */,
+			);
+			name = Scenes;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +260,8 @@
 				B2E19A5B21BC5315002186E4 /* GameScene.sks in Resources */,
 				B2E19A6621BC5318002186E4 /* Assets.xcassets in Resources */,
 				B2E19A6921BC5318002186E4 /* LaunchScreen.storyboard in Resources */,
+				B2E19A8D21BC561E002186E4 /* TitlePage.sks in Resources */,
+				B2E19A9321CED0C6002186E4 /* Footer.sks in Resources */,
 				B2E19A5D21BC5315002186E4 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2E19A5F21BC5315002186E4 /* GameScene.swift in Sources */,
+				B2E19A9121BC5679002186E4 /* TitlePage.swift in Sources */,
 				B2E19A6121BC5315002186E4 /* GameViewController.swift in Sources */,
 				B2E19A5921BC5315002186E4 /* AppDelegate.swift in Sources */,
 			);
@@ -454,7 +475,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = midsummerdreamdigital.MotherGooseFlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -472,7 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = midsummerdreamdigital.MotherGooseFlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
