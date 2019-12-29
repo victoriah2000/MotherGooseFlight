@@ -11,6 +11,13 @@ import GameplayKit
 
 class GameScene: SKScene {
     
+    //footer buttons
+    var footer:SKNode!
+    var btnNext: SKSpriteNode!
+    var btnPrevious: SKSpriteNode!
+    var btnSound: SKSpriteNode!
+    var btnHome: SKSpriteNode!
+    
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
     
@@ -86,4 +93,20 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+
+    override func sceneDidLoad() {
+      super.sceneDidLoad()
+      footer = childNode(withName: "footer")
+        btnNext = (childNode(withName: "//buttonNext") as! SKSpriteNode)
+        btnPrevious = (childNode(withName: "//buttonPrevious") as! SKSpriteNode)
+        btnSound = (childNode(withName: "//buttonSound") as! SKSpriteNode)
+        btnHome = (childNode(withName: "//buttonHome") as! SKSpriteNode)
+
+}
+
+func goToScene(scene: SKScene) {
+  let sceneTransition = SKTransition.fade(with: UIColor.darkGray, duration: 1)
+  scene.scaleMode = .aspectFill
+  self.view?.presentScene(scene, transition: sceneTransition)
+}
 }

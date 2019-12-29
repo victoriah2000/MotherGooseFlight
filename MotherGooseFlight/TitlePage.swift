@@ -10,3 +10,6 @@ import Foundation
 import SpriteKit
 
 // hello
+override func getNextScene() -> SKScene? {
+  return SKScene(fileNamed: "Scene01") as! Scene01
+}
