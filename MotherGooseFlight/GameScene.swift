@@ -43,7 +43,7 @@ class GameScene: SKScene {
     btnNext = (childNode(withName: "//buttonNext") as! SKSpriteNode)
     btnPrevious = (childNode(withName: "//buttonPrevious") as! SKSpriteNode)
     btnSound = (childNode(withName: "//buttonSound") as! SKSpriteNode)
-    btnHome = (childNode(withName: "//buttonHome") as! SKSpriteNode)
+    //btnHome = (childNode(withName: "//buttonHome") as! SKSpriteNode)
     
     backgroundMusic = childNode(withName: "backgroundMusic") as? SKAudioNode
     textAudio = childNode(withName: "textAudio") as? SKAudioNode
